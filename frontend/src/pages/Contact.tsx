@@ -31,6 +31,7 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitSuccess, setSubmitSuccess] = useState(false)
 
+  // TODO: Expand country codes or integrate a library for better UX
   const countryCodes = [
     { code: '+1', country: 'US/CA' },
     { code: '+44', country: 'UK' },
