@@ -7,12 +7,14 @@ A project with FastAPI backend and React TypeScript frontend.
 1. Ensure you have conda installed.
 
 2. Create the conda environment:
+
    ```
    conda create -n home-hero python=3.11 -y
    conda activate home-hero
    ```
 
 3. Install backend dependencies:
+
    ```
    cd backend
    pip install -r requirements.txt
@@ -27,6 +29,7 @@ A project with FastAPI backend and React TypeScript frontend.
 ## Running
 
 1. Start the backend:
+
    ```
    cd backend
    uvicorn main:app --reload
