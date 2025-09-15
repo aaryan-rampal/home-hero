@@ -102,19 +102,17 @@ const Landing = () => {
             </p> */}
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
+              'Drywall Repair',
               'Plumbing',
-              'Electrical',
               'Carpentry',
+              'Cabinet Repair',
               'Painting',
-              'HVAC',
               'Flooring',
-              'Appliance Repair',
-              'General Maintenance'
             ].map((service, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
-                <h3 className="font-semibold text-gray-900">{service}</h3>
+              <div key={index} className="bg-white p-12 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-semibold text-gray-900">{service}</h3>
               </div>
             ))}
           </div>
