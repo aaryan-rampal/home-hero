@@ -40,10 +40,10 @@ const Landing = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Home Hero?
+              Short Waits, Small Rates
             </h2>
             <p className="text-lg text-gray-600">
-              We make finding reliable handymen simple and stress-free
+              We specialize in small jobs and quick turnarounds to get your home back in shape fast.
             </p>
           </div>
 
@@ -95,11 +95,11 @@ const Landing = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Services We Offer
+              Services We Offer (for now...)
             </h2>
-            <p className="text-lg text-gray-600">
-              From small repairs to major installations, we handle it all
-            </p>
+            {/* <p className="text-lg text-gray-600">
+              From small repairs to , we handle it all
+            </p> */}
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
