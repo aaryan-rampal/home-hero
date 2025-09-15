@@ -11,23 +11,26 @@ const Landing = () => {
               Your Home's <span className="text-blue-600">Hero</span> is Here
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Connect with trusted handymen in your area for all your home repair and maintenance needs. 
+              Connect with trusted handymen in your area for all your home repair and maintenance needs.
               From quick fixes to major projects, we've got you covered.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                to="/contact" 
+              <Link
+                to="/contact"
                 className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
               >
                 Find a Handyman
               </Link>
-              <Link 
-                to="/about" 
+              <Link
+                to="/about"
                 className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors"
               >
                 Learn More
               </Link>
             </div>
+              <p className="text-blue-700 mt-4 font-semibold">
+                Or Call Us (555) 123-4567
+              </p>
           </div>
         </div>
       </section>
@@ -43,7 +46,7 @@ const Landing = () => {
               We make finding reliable handymen simple and stress-free
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Feature 1 */}
             <div className="text-center p-6">
@@ -57,7 +60,7 @@ const Landing = () => {
                 All our handymen are background-checked and verified to ensure quality and safety.
               </p>
             </div>
-            
+
             {/* Feature 2 */}
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -70,7 +73,7 @@ const Landing = () => {
                 Get matched with available handymen in your area within minutes, not days.
               </p>
             </div>
-            
+
             {/* Feature 3 */}
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -98,7 +101,7 @@ const Landing = () => {
               From small repairs to major installations, we handle it all
             </p>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               'Plumbing',
@@ -127,8 +130,8 @@ const Landing = () => {
           <p className="text-xl text-blue-100 mb-8">
             Join thousands of satisfied homeowners who trust Home Hero
           </p>
-          <Link 
-            to="/contact" 
+          <Link
+            to="/contact"
             className="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
           >
             Get Your Free Quote
