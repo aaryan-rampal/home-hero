@@ -1,10 +1,25 @@
+
 import { Link } from 'react-router-dom'
+import BackgroundSlideshow from '../components/BackgroundSlideshow'
+import Img1 from '../assets/images/IMG_6487.png'
+import Img2 from '../assets/images/IMG_6488.png'
+import Img3 from '../assets/images/IMG_6489.png'
+import Img4 from '../assets/images/IMG_6490.png'
+import Img5 from '../assets/images/IMG_6491.png'
+import Img6 from '../assets/images/IMG_6493.png'
+// Add/remove images as needed
+
+const imageList = [Img1, Img2, Img3, Img4, Img5, Img6]; // Control images here
+const backgroundOpacity = 0.35; // Control opacity here (0 to 1)
 
 const Landing = () => {
   return (
-    <div>
+    <div className="relative">
+      <div>
+        <BackgroundSlideshow images={imageList} opacity={backgroundOpacity} />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
+      {/* <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20"> */}
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -34,6 +49,7 @@ const Landing = () => {
           </div>
         </div>
       </section>
+      </div>
 
       {/* Features Section */}
       <section className="py-20 bg-white">
