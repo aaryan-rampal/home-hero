@@ -128,11 +128,29 @@ const Contact = () => {
 
     setIsSubmitting(true)
 
-    // Simulate form submission
+    // Submit to backend API
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000))
+      const response = await fetch('http://127.0.0.1:8001/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          country_code: formData.countryCode,
+          phone_number: formData.phoneNumber,
+          description: formData.description
+        }),
+      })
 
-      console.log('Form submitted:', formData)
+      if (!response.ok) {
+        const errorData = await response.json()
+        throw new Error(errorData.detail || 'Failed to submit form')
+      }
+
+      const result = await response.json()
+      console.log('Form submitted successfully:', result)
       setSubmitSuccess(true)
 
       // Reset form
@@ -151,6 +169,7 @@ const Contact = () => {
 
     } catch (error) {
       console.error('Error submitting form:', error)
+      alert('Failed to submit form. Please try again.')
     } finally {
       setIsSubmitting(false)
     }
