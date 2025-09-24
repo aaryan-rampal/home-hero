@@ -23,6 +23,10 @@ app.add_middleware(
         "http://127.0.0.1:5173",
         "http://localhost:3000",
         "http://127.0.0.1:3000",
+        "https://home-hero-neon.vercel.app",
+        "https://www.home-hero.ca",
+        "https://*.railway.app",
+        "https://*.up.railway.app",
     ],  # Add your frontend URLs
     allow_credentials=True,
     allow_methods=["*"],
