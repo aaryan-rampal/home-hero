@@ -1,5 +1,7 @@
 import AaryanHeadshot from '../assets/images/aaryan_headshot.jpg'
 import JavierHeadshot from '../assets/images/javier_headshot.jpg'
+import MissionImage from '../assets/images/IMG_6501.png'
+import StoryImage from '../assets/images/IMG_6487.png'
 
 const About = () => {
   return (
@@ -14,7 +16,7 @@ const About = () => {
         </div>
 
         {/* Mission Section */}
-        <div className="lg:grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="space-y-6">
             <h2 className="text-3xl font-semibold text-gray-800">Our Mission</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
@@ -34,11 +36,19 @@ const About = () => {
               </div>
             </div>
           </div>
+          <div className="bg-gray-300 aspect-square rounded-lg flex items-center justify-center">
+            <img src={MissionImage} alt="Aaryan Rampal" className="w-full h-full object-cover" />
+            {/* <span className="text-gray-500 text-lg font-medium">Mission Image</span> */}
+          </div>
         </div>
 
         {/* Story Section */}
-        <div className="lg:grid lg:grid-cols-1 gap-12 items-center mb-20">
-          <div className="space-y-6">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="bg-gray-300 aspect-square rounded-lg flex items-center justify-center order-2 lg:order-1">
+            {/* <span className="text-gray-500 text-lg font-medium">Story Image</span> */}
+            <img src={StoryImage} alt="Our Story" className="w-full h-full object-cover" />
+          </div>
+          <div className="space-y-6 order-1 lg:order-2">
             <h2 className="text-3xl font-semibold text-gray-800">Our Story</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               Home Hero was born from a simple observation made by two university students. Javier, studying at SFU, and Aaryan, at UBC, noticed a clear gap in the market: students desperately seeking work opportunities, while homeowners struggled to find affordable help for small repairs and maintenance tasks.
