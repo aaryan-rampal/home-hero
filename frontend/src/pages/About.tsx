@@ -1,3 +1,6 @@
+import AaryanHeadshot from '../assets/images/aaryan_headshot.jpg'
+import JavierHeadshot from '../assets/images/javier_headshot.jpg'
+
 const About = () => {
   return (
     <div className="py-20 bg-gray-50">
@@ -11,7 +14,7 @@ const About = () => {
         </div>
 
         {/* Mission Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="lg:grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="space-y-6">
             <h2 className="text-3xl font-semibold text-gray-800">Our Mission</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
@@ -31,17 +34,11 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="bg-gray-300 aspect-square rounded-lg flex items-center justify-center">
-            <span className="text-gray-500 text-lg font-medium">Mission Image</span>
-          </div>
         </div>
 
         {/* Story Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          <div className="bg-gray-300 aspect-square rounded-lg flex items-center justify-center order-2 lg:order-1">
-            <span className="text-gray-500 text-lg font-medium">Story Image</span>
-          </div>
-          <div className="space-y-6 order-1 lg:order-2">
+        <div className="lg:grid lg:grid-cols-1 gap-12 items-center mb-20">
+          <div className="space-y-6">
             <h2 className="text-3xl font-semibold text-gray-800">Our Story</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               Home Hero was born from a simple observation made by two university students. Javier, studying at SFU, and Aaryan, at UBC, noticed a clear gap in the market: students desperately seeking work opportunities, while homeowners struggled to find affordable help for small repairs and maintenance tasks.
@@ -117,12 +114,12 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="text-center space-y-4">
-              <div className="bg-gradient-to-br from-blue-100 to-blue-200 aspect-square rounded-lg flex items-center justify-center">
-                <span className="text-blue-600 text-lg font-medium">Javier's Photo</span>
+              <div className="aspect-square rounded-lg overflow-hidden">
+                <img src={JavierHeadshot} alt="Javier Taylor" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-800">Javier (Anand) Taylor</h3>
-                <p className="text-blue-600 font-medium">Co-Founder</p>
+                <p className="text-blue-600 font-medium">Co-Founder & CEO</p>
                 <p className="text-gray-600 text-sm mt-2">
                   SFU student passionate about creating opportunities for fellow students while solving real community problems.
                 </p>
@@ -130,12 +127,12 @@ const About = () => {
             </div>
 
             <div className="text-center space-y-4">
-              <div className="bg-gradient-to-br from-green-100 to-green-200 aspect-square rounded-lg flex items-center justify-center">
-                <span className="text-green-600 text-lg font-medium">Aaryan's Photo</span>
+              <div className="aspect-square rounded-lg overflow-hidden">
+                <img src={AaryanHeadshot} alt="Aaryan Rampal" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-800">Aaryan Rampal</h3>
-                <p className="text-blue-600 font-medium">Co-Founder</p>
+                <p className="text-blue-600 font-medium">Co-Founder & Head of Operations</p>
                 <p className="text-gray-600 text-sm mt-2">
                   UBC student dedicated to making essential home services accessible to families from all economic backgrounds.
                 </p>
