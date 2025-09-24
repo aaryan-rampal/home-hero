@@ -130,7 +130,8 @@ const Contact = () => {
 
     // Submit to backend API
     try {
-      const response = await fetch('http://127.0.0.1:8001/contact', {
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8001'
+      const response = await fetch(`${apiUrl}/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
